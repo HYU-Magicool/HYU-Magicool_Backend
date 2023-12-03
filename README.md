@@ -1,3 +1,3 @@
 # magiCool_Backend
 
-Source Codes for magiCool Backend server. 
+Source codes for magiCool backend server. 

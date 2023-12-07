@@ -18,10 +18,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use("/api/register", require("./routes/api/register"));
-
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use("/api/register", require("./routes/api/register"));
+app.use('/api/gpt', require("./routes/api/gpt"));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
